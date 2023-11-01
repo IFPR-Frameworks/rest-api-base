@@ -4,18 +4,18 @@ namespace App\Controllers;
 
 use Slim\Http\Request;
 use Slim\Http\Response;
-use App\Repositories\???Repository;
+use App\Repositories\NomearRepository;
 
 class NomearController {
 
     private mixed $container;
     
-    //private ???Repository $repository;
+    //private NomearRepository $repository;
 
     public function __construct($container)
     {
         $this->container = $container;
-        $this->repository = new ???Repository();
+        $this->repository = new NomearRepository();
     }
 
 
